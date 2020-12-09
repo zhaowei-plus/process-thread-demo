@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <title>竞技场</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="./index.js"></script>
+    <style>
+        .arena {
+            width: 500px;
+            height: 300px;
+            padding: 20px;
+            margin: 0 auto;
+            border: 1px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+        .arena__control {
+            height: 42px;
+            line-height: 42px;
+        }
+        .arena__tracks {
+            width: 100%;
+        }
+        .arena__tracks .track {
+            /*width: calc(attr(data-width));*/
+            height: 32px;
+            line-height: 32px;
+            border: 1px solid red;
+            margin: 4px 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="arena">
+    <h2>欢迎来到竞技场</h2>
+    <div class="arena__control">
+        <a href="#">开始比赛</a>
+    </div>
+    <div class="arena__tracks">
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+    </div>
+</div>
+<div id="result"></div>
+</body>
+
+</html>
